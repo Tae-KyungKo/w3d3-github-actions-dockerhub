@@ -2,7 +2,6 @@
 KT Cloud native 3rd - for lecture
 
 
-여기에서 한 줄을 띄우고 표를 시작해야 합니다.
 
 | 확인 항목 | 값 |
 | :--- | :--- |
