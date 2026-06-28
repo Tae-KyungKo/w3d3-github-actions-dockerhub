@@ -1,0 +1,20 @@
+server:
+  port: ${SPRING_SERVER_PORT:8080} # .env에서 주입받고, 없으면 8080 사용'
+
+spring:
+  application:
+    name: demo
+  datasource:
+    # 도커 컴포즈 내의 DB 서비스명인 'database-db'를 호스트명으로 지정합니다.
+    url: jdbc:postgresql://database-db:${DB_PORT:5432}/${DB_NAME:mydb}
+    username: ${DB_USER:myuser}
+    password: ${DB_PASSWORD:mysecurepassword123}
+    driver-class-name: org.postgresql.Driver
+
+    jpa:
+      hibernate:
+        ddl-auto: update # 테이블 구조 자동 갱신 (연습/개발 환경 전용)
+      show-sql: true     # 실행되는 SQL 쿼리를 로그로 노출
+      properties:
+        hibernate:
+          format_sql: true # SQL 로그 가독성 향상
