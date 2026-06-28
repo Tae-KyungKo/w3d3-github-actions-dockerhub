@@ -14,3 +14,5 @@ KT Cloud native 3rd - for lecture
 | 문제 파일 | dast-health-check.sh, run-all-local.sh, sast-scan.sh, unit-test.sh| 
 | 실행한 명령어 | git update-index --chmod=+x week3/day3/labs/quality-gates/*.sh |
 | 실행 결과 | Git Action 빌드 성공 |
+
+스프링부트 웹 서버를 docker로 띄울 땐 꼭 빌드와 실행환경 이미지를 신경쓰자
